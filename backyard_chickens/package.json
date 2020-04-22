@@ -1,0 +1,16 @@
+{
+  "name": "backyard_chickens",
+  "version": "0.0.0",
+  "author": "John Paul Ashenfelter <john@ashenfelter.com>",
+  "private": true,
+  "scripts": {
+    "build": "npm run -s og-image && npm run -s deck",
+    "deck": "marp index.md -o dist/index.html && cp -Rf images/ dist/images/",
+    "now-build": "cat index.md | marp -o dist/index.html",
+    "og-image": "marp index.md -o dist/og-image.jpg",
+    "start": "marp -ps ."
+  },
+  "devDependencies": {
+    "@marp-team/marp-cli": "^0.7"
+  }
+}
