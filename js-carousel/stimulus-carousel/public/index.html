@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="main.css">
+  <script src="bundle.js" async></script>
+</head>
+<body>
+  <div data-controller="carousel" data-carousel-index="1">
+    <figure>
+      <img data-target="carousel.image" />
+      <figcaption data-target="carousel.caption">
+      </figcaption>
+    </figure>
+    <button data-action="carousel#previous">Prev</button>
+    <button data-action="carousel#next">Next</button>
+  </div>
+  
+</body>
+</html>
